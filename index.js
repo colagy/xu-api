@@ -1,10 +1,9 @@
 'use strict';
 
-let ls = localStorage
 
 ls = {
   get(k) {
-    let v = ls.getItem(k)
+    let v = localStorage.getItem(k)
     if (!v) {
       return undefined
     }
@@ -33,7 +32,7 @@ ls = {
     if (t === 'object') {
       v = JSON.stringify(v)
     }
-    ls.setItem(k, t + ':-' + v)
+    localStorage.setItem(k, t + ':-' + v)
   }
 }
 
