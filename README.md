@@ -10,6 +10,7 @@ const Api = require('xu-api')
 const host = 'http://127.0.0.1:8000/api/v1'
 // 定义是否缓存接口返回的数据
 const cache = false;
+
 const api = new Api(host,cache)
 module.exports = api
 
@@ -19,7 +20,7 @@ module.exports = api
 
 ```
 
-// 引入api工具 封装了get,post,put,del 默认10000秒超时
+// 引入api工具 封装了get,post,put,del 默认10000毫秒超时
 const api = require('./api');
 // GET请求
 const get = await api.get('/item',{
