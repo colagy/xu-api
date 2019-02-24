@@ -2,7 +2,7 @@
 
 ## 创建工具 api.js
 
-`
+```
 
 // 引入npm
 const Api = require('xu-api')
@@ -13,11 +13,11 @@ const cache = false;
 const api = new Api(host,cache)
 module.exports = api
 
-`
+```
 
 ## 使用工具
 
-`
+```
 
 // 引入api工具 封装了get,post,put,del 默认10000秒超时
 const api = require('./api');
@@ -39,4 +39,4 @@ const del = await api.del('/item',{
     id : 1
 })
 
-`
+```
